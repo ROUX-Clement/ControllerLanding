@@ -485,3 +485,117 @@ footer::before {
   }
 }
 
+@media screen and (max-width:1300px) {
+  .container {
+    width: 1000px;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 1.1em;
+    margin-top: -15px;
+  }
+
+  p {
+    font-size: 1em;
+    letter-spacing: 0px;
+    margin-top: -75px;
+  }
+
+  .arguments {
+    font-size: 0.7rem;
+    margin-top: -60px;
+  }
+
+  .acheter {
+    margin-top: -80px;
+  }
+
+  .button {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: var(--icon-color);
+    border-radius: 50px;
+    padding: 3px 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font: 700 0.8rem "poppins";
+    transition: 0.5s;
+    color: var(--background-color);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    margin-top: -110px;
+  }
+
+  .img-mid {
+    background: url(../Assets/IMGremovebg/eclatemid1300px.png) no-repeat;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  
+  .container {
+    width: 900px;
+  }
+
+  .section-1 {
+    display: grid;
+    grid-template-columns: 31% 39% 30%;
+    grid-template-rows: 100px 190px 190px 80px;
+    grid-template-areas:
+      "title img carousel"
+      "description img carousel"
+      "nul img carousel"
+      "addtocart img slideselect";
+  }
+  
+  /* Positionning */
+  
+  .h1 {
+    grid-area: title;
+  }
+  
+  .description {
+    grid-area: description;
+  }
+  
+  .arguments {
+    grid-area: argument;
+  }
+  
+  .acheter {
+    grid-area: addtocart;
+  }
+  
+  .img-mid {
+    grid-area: img;
+  }
+  
+  .container-carousel {
+    grid-area: carousel;
+  }
+  
+  .slider-but-select {
+    grid-area: slideselect;
+  }
+
+  h1 {
+    margin-top: 5px;
+    font-size: 1.2em;
+  }
+
+  p {
+    margin-top: -10px;
+  }
+
+  .acheter {
+    margin-top: -100px;
+  }
+
+  footer {
+    margin-top: -240px;
+  }
+}
