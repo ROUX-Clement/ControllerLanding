@@ -98,12 +98,58 @@ nav li {
   display: none;
 }
 
+.sub1 {
+  display: none;
+}
+
 nav a {
   display: inline-block;
   text-decoration: none;
 }
 
 /* Onglets secondaires déroulant */
+
+nav li:hover .sub1 {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.sub1 li {
+  border-bottom: 1px solid var(--background-color);
+  background-color: var(--icon-color);
+}
+
+.sub1 li a {
+  padding: 10px 0;
+  font-size: 13px;
+  color: var(--background-color);
+  width: 99px;
+  text-align: center;
+}
+
+.sub1top {
+  border-radius: 10px 10px 0 0;
+}
+
+.sub1bot {
+  border-radius: 0 0 10px 10px;
+}
+
+.sub1top:hover,
+.sub1bot:hover {
+  background: var(--hover-color);
+}
+
+.suba:hover {
+  color: var(--text-color);
+  text-shadow: none;
+  transition: 0s;
+  cursor: pointer;
+}
 
 nav li:hover .submenu {
   display: inline-block;
@@ -401,3 +447,41 @@ footer::before {
 .fa-facebook-square {
   font-size: 25px;
 }
+
+/******************** Responsive ********************/ 
+
+@media screen and (max-width:1500px) {
+  .container {
+    width: 1300px;
+    height: 630px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-top: -40px;
+    letter-spacing: 0px;
+  }
+
+  .arguments {
+    font-size: 0.9rem;
+    margin-top: -50px;
+  }
+
+  .img-mid {
+    margin-top: 30px;
+    margin-left: -90px;
+  }
+
+  .acheter {
+    margin-top: -60px;
+  }
+
+  footer {
+    margin-top: -70px;
+  }
+}
+
