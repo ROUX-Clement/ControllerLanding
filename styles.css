@@ -48,6 +48,17 @@ body {
   background: var(--gradient-background-box);
   border-radius: 40px;
   box-shadow: 20px 40px 20px var(--box-shadow);
+  z-index: 2;
+}
+
+.tp {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: url(../Assets/Logo/logo-transparent-background.png) no-repeat;
+  margin: -30px 1200px;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 /******************** Navbar ********************/
@@ -387,7 +398,6 @@ img.active {
 
 #lightbox {
   position: fixed;
-  z-index: 1000;
   top: 0;
   width: 100%;
   height: 100%;
@@ -399,6 +409,7 @@ img.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 4;
 }
 
 #lightbox img {
@@ -407,6 +418,7 @@ img.active {
   padding: 4px;
   background-color: var(--Box-border);
   border: 2px solid var(--icon-color);
+  z-index: 5;
 }
 
 /******************** Footer social media ********************/
@@ -483,7 +495,19 @@ footer::before {
   footer {
     margin-top: -70px;
   }
+
+  .tp {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url(../Assets/Logo/logo-transparent-background.png) no-repeat;
+    margin: -30px 1000px;
+    opacity: 0.1;
+    z-index: -1;
+  }
 }
+
+
 
 @media screen and (max-width:1300px) {
   .container {
@@ -533,7 +557,19 @@ footer::before {
     background: url(../Assets/IMGremovebg/eclatemid1300px.png) no-repeat;
     margin-top: 60px;
   }
+  
+  .tp {
+    position: absolute;
+    width: 500px;
+  height: 500px;
+  background: url(../Assets/Logo/logo-transparent-background.png) no-repeat;
+    margin: -30px 700px;
+    opacity: 0.1;
+    z-index: -1;
+  }
 }
+
+
 
 @media screen and (max-width:1000px) {
   
@@ -598,4 +634,17 @@ footer::before {
   footer {
     margin-top: -240px;
   }
+
+  .tp {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url(../Assets/Logo/logo-transparent-background.png) no-repeat;
+    margin: -30px 600px;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
 }
+
+
